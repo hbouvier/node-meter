@@ -10,21 +10,6 @@ var Funnel  = require('../node-tts/modules/funnel'),
     var maxChannels          =  5000;
     var nbRequestSent        =    0;
     
-    var postConfig = {
-            host: 'node-geoip.heroku.com',
-            port: 80,
-            path: '/ws/display',
-            method: 'POST'
-            //headers : {'Content-Type' : 'application/json'}
-    };
-    
-    var getConfig2 = {
-            host: 'node-geoip.herokuapp.com',
-            port: 80,
-            path: '/ws/display',
-            method: 'GET'
-            //headers : {'Content-Type' : 'application/json'}
-    };
     var getConfig = {
             host: '127.0.0.1',
             port: 8081,
