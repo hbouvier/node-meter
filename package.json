@@ -1,0 +1,26 @@
+{
+  "name": "node-meter",
+  "version": "0.0.1",
+  "description": "A load test engine",
+  "author": "Henri Bouvier",
+  "main": "node-meter",
+  "bin": {
+    "nmeter": "./node-meter.js"
+  },
+  "keywords": [
+    "load",
+    "performance"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:hbouvier/node-meter.git"
+  },
+  "dependencies": {
+    "cluster": "latest"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {},
+  "engines": {
+    "node": ">= 0.6.6 < 0.7.0"
+  }
+}
