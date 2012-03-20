@@ -27,7 +27,7 @@ module.exports = (function () {
         return dst;
     }
 
-    function post(options, body, callback) {
+    function post(options, body, userData, callback) {
         var boundary = Math.random(),
             postData = null;
         options  = merge(defaultPostOptions, options);
@@ -60,7 +60,7 @@ module.exports = (function () {
                     requestData += data;
                 if (verbose) util.log('httppost|post|response|end=' + requestData);
                 if (callback)
-                    callback(null, requestData);
+                    callback(null, requestData, userData);
             });
         });
         if (postData) {
